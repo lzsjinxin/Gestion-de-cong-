@@ -34,6 +34,8 @@ namespace Gestion_de_congé
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.afficher_demandé = new Guna.UI2.WinForms.Guna2Button();
             this.conge_show = new Guna.UI2.WinForms.Guna2Button();
             this.quit = new Guna.UI2.WinForms.Guna2Button();
@@ -79,9 +81,7 @@ namespace Gestion_de_congé
             this.en_conge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.solde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -103,6 +103,31 @@ namespace Gestion_de_congé
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1118, 97);
             this.guna2GradientPanel1.TabIndex = 1;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1007, 3);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 12;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1058, 3);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 11;
             // 
             // afficher_demandé
             // 
@@ -955,31 +980,6 @@ namespace Gestion_de_congé
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1058, 3);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 11;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1007, 3);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 12;
             // 
             // Admin
             // 
