@@ -2033,6 +2033,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cal.ico" />
+    <Content Include="Database\pfe.sql" />
     <Content Include="Resources\cal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

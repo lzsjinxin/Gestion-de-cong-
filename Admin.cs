@@ -173,6 +173,14 @@ namespace Gestion_de_congé
             }
             try
             {
+                if (conge_text.Text == "Oui"|| conge_text.Text == "oui"|| conge_text.Text == "OUI")
+                {
+                    true_conge_value.Text = "1";
+                }
+                else if(conge_text.Text == "Non" || conge_text.Text == "non" || conge_text.Text == "NON")
+                {
+                    true_conge_value.Text = "0";
+                }
                 cone.Open();
                 string sqlCom = "UPDATE employeee SET nom = '" + nom_text_admin.Text + "', prenom = '" + prenom_text_admin.Text + "',passe =  '" + mdp_text_admin.Text + "',en_congé = " + Convert.ToInt32(true_conge_value.Text) + ",solde = "+Convert.ToInt32(solde_text.Text)+ "WHERE  loginn = '" +login_text_admin.Text +"'";
                 SqlCommand command = new SqlCommand(sqlCom, cone);
