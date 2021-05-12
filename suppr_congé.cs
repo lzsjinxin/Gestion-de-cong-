@@ -91,6 +91,7 @@ namespace Gestion_de_congé
                     cone.Close();
                     MessageBox.Show("Suppression Bien fait");
                     supprimer.Enabled = false;
+                    this.Close();
                 }
                 else
                 {
