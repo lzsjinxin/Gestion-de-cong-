@@ -1,7 +1,6 @@
 D:\source\repos\Gestion de congé\bin\Debug\Gestion de congé.exe.config
 D:\source\repos\Gestion de congé\bin\Debug\Gestion de congé.exe
 D:\source\repos\Gestion de congé\bin\Debug\Gestion de congé.pdb
-D:\source\repos\Gestion de congé\obj\Debug\Gestion de congé.csprojAssemblyReference.cache
 D:\source\repos\Gestion de congé\obj\Debug\Gestion_de_congé.Properties.Resources.resources
 D:\source\repos\Gestion de congé\obj\Debug\Gestion de congé.csproj.GenerateResource.cache
 D:\source\repos\Gestion de congé\obj\Debug\Gestion de congé.csproj.CoreCompileInputs.cache

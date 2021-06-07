@@ -66,7 +66,7 @@ namespace Gestion_de_congé
             this.date_debut.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_debut.Name = "date_debut";
             this.date_debut.ShadowDecoration.Parent = this.date_debut;
-            this.date_debut.Size = new System.Drawing.Size(195, 36);
+            this.date_debut.Size = new System.Drawing.Size(242, 36);
             this.date_debut.TabIndex = 0;
             this.date_debut.Value = new System.DateTime(2021, 4, 21, 15, 45, 54, 259);
             this.date_debut.ValueChanged += new System.EventHandler(this.date_debut_ValueChanged);
@@ -83,7 +83,7 @@ namespace Gestion_de_congé
             this.Demander.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Demander.ForeColor = System.Drawing.Color.White;
             this.Demander.HoverState.Parent = this.Demander;
-            this.Demander.Location = new System.Drawing.Point(322, 315);
+            this.Demander.Location = new System.Drawing.Point(327, 315);
             this.Demander.Name = "Demander";
             this.Demander.ShadowDecoration.Parent = this.Demander;
             this.Demander.Size = new System.Drawing.Size(200, 65);
@@ -133,7 +133,7 @@ namespace Gestion_de_congé
             this.date_retour.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_retour.Name = "date_retour";
             this.date_retour.ShadowDecoration.Parent = this.date_retour;
-            this.date_retour.Size = new System.Drawing.Size(195, 32);
+            this.date_retour.Size = new System.Drawing.Size(247, 32);
             this.date_retour.TabIndex = 2;
             this.date_retour.Value = new System.DateTime(2021, 4, 21, 15, 46, 17, 273);
             this.date_retour.ValueChanged += new System.EventHandler(this.date_retour_ValueChanged);
@@ -152,7 +152,7 @@ namespace Gestion_de_congé
             this.date_fin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_fin.Name = "date_fin";
             this.date_fin.ShadowDecoration.Parent = this.date_fin;
-            this.date_fin.Size = new System.Drawing.Size(195, 36);
+            this.date_fin.Size = new System.Drawing.Size(242, 36);
             this.date_fin.TabIndex = 1;
             this.date_fin.Value = new System.DateTime(2021, 4, 21, 0, 0, 0, 0);
             this.date_fin.ValueChanged += new System.EventHandler(this.date_fin_ValueChanged);
@@ -188,7 +188,7 @@ namespace Gestion_de_congé
             this.guna2GroupBox1.Location = new System.Drawing.Point(194, 129);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(751, 403);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(760, 403);
             this.guna2GroupBox1.TabIndex = 4;
             this.guna2GroupBox1.UseTransparentBackground = true;
             // 

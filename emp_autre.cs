@@ -98,7 +98,7 @@ namespace Gestion_de_congé
                 }
                 else if (b < 0)
                 {
-                    MessageBox.Show("Vous puvez pas demander un congé pour aujourd'hui");
+                    MessageBox.Show("Vous pouvez pas demander un congé pour aujourd'hui");
                     return;
                 }
 

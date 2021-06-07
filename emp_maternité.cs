@@ -74,9 +74,14 @@ namespace Gestion_de_congé
                 var c = date_debut.Value.AddMonths(2);
                 
                 cone.Open();
-                string com_insert = " insert into conge(login_emp,date_debut,date_fin,nbr_de_jour,date_retour,typee) values ( '" + Login.login + "', '" + b.ToString() + "','" + c.ToString() + "',121,'" + c.AddDays(1).ToString() + "','Maternité')";
+                string com_insert = " insert into conge_accepté(login_emp,date_debut,date_fin,nbr_de_jour,date_retour,typee) values ( '" + Login.login + "', '" + b.ToString() + "','" + c.ToString() + "',121,'" + c.AddDays(1).ToString() + "','Maternité')";
                 SqlCommand command = new SqlCommand(com_insert, cone);
                 command.ExecuteNonQuery();
+                cone.Close();
+                cone.Open();
+                string com_update_en_conge = "update employeee set en_congé = 1 where loginn = '" + Login.login + "'";
+                SqlCommand command_up_1 = new SqlCommand(com_update_en_conge, cone);
+                command_up_1.ExecuteNonQuery();
                 cone.Close();
                 MessageBox.Show("Congé demandé!!");
                 Login l2 = new Login();

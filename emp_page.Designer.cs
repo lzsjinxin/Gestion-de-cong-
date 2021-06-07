@@ -135,7 +135,7 @@ namespace Gestion_de_congé
             this.guna2Panel2.Location = new System.Drawing.Point(194, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(763, 130);
+            this.guna2Panel2.Size = new System.Drawing.Size(763, 224);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2ControlBox2

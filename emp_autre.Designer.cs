@@ -288,9 +288,9 @@ namespace Gestion_de_congé
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(683, 82);
+            this.label1.Size = new System.Drawing.Size(728, 82);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Congé exceptionel";
+            this.label1.Text = "Congé exceptionnel";
             // 
             // guna2Panel2
             // 

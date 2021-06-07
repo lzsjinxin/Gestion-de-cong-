@@ -77,11 +77,16 @@ namespace Gestion_de_congé
                 }
 
                 cone.Open();
-                string com_insert = " insert into conge(login_emp,date_debut,date_fin,nbr_de_jour,date_retour,typee) values ( '" + Login.login + "', '" + date_debut.Value + "','" + date_fin.Value + "'," + Convert.ToInt32(a) + ",'" + date_retour.Value + "','Maladie')";
+                string com_insert = " insert into conge_accepté(login_emp,date_debut,date_fin,nbr_de_jour,date_retour,typee) values ( '" + Login.login + "', '" + date_debut.Value + "','" + date_fin.Value + "'," + Convert.ToInt32(a) + ",'" + date_retour.Value + "','Maladie')";
                 SqlCommand command = new SqlCommand(com_insert, cone);
                 command.ExecuteNonQuery();
                 cone.Close();
-                MessageBox.Show("Congé demandé!!");
+                cone.Open();
+                string com_update_en_conge = "update employeee set en_congé = 1 where loginn = '" + Login.login + "'";
+                SqlCommand command_up_1 = new SqlCommand(com_update_en_conge, cone);
+                command_up_1.ExecuteNonQuery();
+                cone.Close();
+                MessageBox.Show("Congé Pris!!");
                 Login l2 = new Login();
                 this.Hide();
                 l2.Show();

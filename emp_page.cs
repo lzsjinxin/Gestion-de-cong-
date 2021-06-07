@@ -79,7 +79,7 @@ namespace Gestion_de_congé
                 }
                  else if (b <0 )
                 {
-                    MessageBox.Show("Vous puvez pas demander un congé pour aujourd'hui");
+                    MessageBox.Show("Vous pouvez pas demander un congé pour aujourd'hui");
                     return;
                 }
                  
@@ -89,11 +89,7 @@ namespace Gestion_de_congé
                     SqlCommand command = new SqlCommand(com_insert, cone);
                     command.ExecuteNonQuery();
                     cone.Close();
-                    cone.Open();
-                    string com_update_en_conge = "update employeee set en_congé = 1 where loginn = '"+Login.login+"'";
-                    SqlCommand command_up_1 = new SqlCommand(com_update_en_conge, cone);
-                    command_up_1.ExecuteNonQuery();
-                    cone.Close();
+       
                     cone.Open();
                     string com_update_solde = "update employeee set solde = solde -"+Convert.ToInt32(a)+" where loginn = '" + Login.login + "'";
                     SqlCommand command_up_2 = new SqlCommand(com_update_solde, cone);
