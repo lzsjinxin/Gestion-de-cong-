@@ -13,8 +13,7 @@ namespace Gestion_de_congé
 {
     public partial class Login : Form
     {
-
-        public static string conn = "Data Source=localhost;Initial Catalog=gestion_conge;Integrated Security=True";
+        public static string conn = ServerName.conn;
         public SqlConnection cone = new SqlConnection(conn);
         public SqlDataReader sdr;
         public static string login;
@@ -79,7 +78,7 @@ namespace Gestion_de_congé
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mot de passe ou login eronné");
+                MessageBox.Show(ex.Message);
                
             }
         }
@@ -106,6 +105,14 @@ namespace Gestion_de_congé
             if (e.KeyCode == Keys.Enter)
             {
                 login_butt_Click(this, new EventArgs());
+            }
+        }
+        private void Menu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Alt && e.KeyCode == Keys.Down)
+            {
+                Change_server FFRM = new Change_server();
+                FFRM.ShowDialog();
             }
         }
     }

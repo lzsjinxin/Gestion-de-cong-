@@ -24,3 +24,5 @@ D:\source\repos\Gestion de Congé\obj\Debug\Gestion_de_congé.congé_demandé_em
 D:\source\repos\Gestion de Congé\obj\Debug\Gestion_de_congé.emp_maladie.resources
 D:\source\repos\Gestion de Congé\obj\Debug\Gestion_de_congé.emp_maternité.resources
 D:\source\repos\Gestion de Congé\obj\Debug\Gestion_de_congé.emp_autre.resources
+D:\source\repos\Gestion de Congé\obj\Debug\Gestion de congé.csprojAssemblyReference.cache
+D:\source\repos\Gestion de Congé\obj\Debug\Gestion_de_congé.Change_server.resources

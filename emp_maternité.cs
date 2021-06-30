@@ -13,7 +13,7 @@ namespace Gestion_de_congé
 {
     public partial class emp_maternité : Form
     {
-        public static string conn = "Data Source=localhost;Initial Catalog=gestion_conge;Integrated Security=True";
+        public static string conn = ServerName.conn;
         public SqlConnection cone = new SqlConnection(conn);
         public SqlDataReader sdr;
         public emp_maternité()

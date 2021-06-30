@@ -36,8 +36,8 @@ namespace Gestion_de_congé
             this.mdp_create = new Guna.UI2.WinForms.Guna2TextBox();
             this.conf_mdp_create = new Guna.UI2.WinForms.Guna2TextBox();
             this.creer_mdp_button = new Guna.UI2.WinForms.Guna2Button();
-            this.Back = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.Back = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // Login_create
@@ -188,7 +188,7 @@ namespace Gestion_de_congé
             this.creer_mdp_button.BorderRadius = 21;
             this.creer_mdp_button.CheckedState.Parent = this.creer_mdp_button;
             this.creer_mdp_button.CustomImages.Parent = this.creer_mdp_button;
-            this.creer_mdp_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.creer_mdp_button.FillColor = System.Drawing.Color.Gray;
             this.creer_mdp_button.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.creer_mdp_button.ForeColor = System.Drawing.Color.White;
             this.creer_mdp_button.HoverState.Parent = this.creer_mdp_button;
@@ -200,6 +200,11 @@ namespace Gestion_de_congé
             this.creer_mdp_button.Text = "Ajouter";
             this.creer_mdp_button.Click += new System.EventHandler(this.creer_mdp_button_Click);
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 100;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            // 
             // Back
             // 
             this.Back.Animated = true;
@@ -207,28 +212,23 @@ namespace Gestion_de_congé
             this.Back.BorderRadius = 21;
             this.Back.CheckedState.Parent = this.Back;
             this.Back.CustomImages.Parent = this.Back;
-            this.Back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.Back.FillColor = System.Drawing.Color.Gray;
             this.Back.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Back.ForeColor = System.Drawing.Color.White;
             this.Back.HoverState.Parent = this.Back;
             this.Back.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
-            this.Back.Location = new System.Drawing.Point(28, 12);
+            this.Back.Location = new System.Drawing.Point(43, 12);
             this.Back.Name = "Back";
             this.Back.ShadowDecoration.Parent = this.Back;
             this.Back.Size = new System.Drawing.Size(55, 45);
             this.Back.TabIndex = 6;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.BorderRadius = 100;
-            this.guna2BorderlessForm1.ContainerControl = this;
-            // 
             // Create_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(727, 426);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.creer_mdp_button);

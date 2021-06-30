@@ -30,54 +30,14 @@ namespace Gestion_de_congé
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Back = new Guna.UI2.WinForms.Guna2Button();
-            this.supprimer = new Guna.UI2.WinForms.Guna2Button();
             this.par_login = new Guna.UI2.WinForms.Guna2TextBox();
             this.par_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.par_login_check = new System.Windows.Forms.CheckBox();
             this.par_id_check = new System.Windows.Forms.CheckBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.Back = new Guna.UI2.WinForms.Guna2Button();
+            this.supprimer = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // Back
-            // 
-            this.Back.Animated = true;
-            this.Back.AutoRoundedCorners = true;
-            this.Back.BorderRadius = 21;
-            this.Back.CheckedState.Parent = this.Back;
-            this.Back.CustomImages.Parent = this.Back;
-            this.Back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.Back.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Back.ForeColor = System.Drawing.Color.White;
-            this.Back.HoverState.Parent = this.Back;
-            this.Back.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
-            this.Back.Location = new System.Drawing.Point(142, 12);
-            this.Back.Name = "Back";
-            this.Back.ShadowDecoration.Parent = this.Back;
-            this.Back.Size = new System.Drawing.Size(55, 45);
-            this.Back.TabIndex = 11;
-            this.Back.Click += new System.EventHandler(this.Back_Click);
-            // 
-            // supprimer
-            // 
-            this.supprimer.Animated = true;
-            this.supprimer.AutoRoundedCorners = true;
-            this.supprimer.BorderRadius = 21;
-            this.supprimer.CheckedState.Parent = this.supprimer;
-            this.supprimer.CustomImages.Parent = this.supprimer;
-            this.supprimer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.supprimer.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supprimer.ForeColor = System.Drawing.Color.White;
-            this.supprimer.HoverState.Parent = this.supprimer;
-            this.supprimer.Image = global::Gestion_de_congé.Properties.Resources.trash_b;
-            this.supprimer.ImageSize = new System.Drawing.Size(30, 30);
-            this.supprimer.Location = new System.Drawing.Point(275, 250);
-            this.supprimer.Name = "supprimer";
-            this.supprimer.ShadowDecoration.Parent = this.supprimer;
-            this.supprimer.Size = new System.Drawing.Size(180, 45);
-            this.supprimer.TabIndex = 10;
-            this.supprimer.Text = "Supprimer";
-            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
             // 
             // par_login
             // 
@@ -155,10 +115,51 @@ namespace Gestion_de_congé
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
+            // Back
+            // 
+            this.Back.Animated = true;
+            this.Back.AutoRoundedCorners = true;
+            this.Back.BorderRadius = 21;
+            this.Back.CheckedState.Parent = this.Back;
+            this.Back.CustomImages.Parent = this.Back;
+            this.Back.FillColor = System.Drawing.Color.Gray;
+            this.Back.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Back.ForeColor = System.Drawing.Color.White;
+            this.Back.HoverState.Parent = this.Back;
+            this.Back.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
+            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Name = "Back";
+            this.Back.ShadowDecoration.Parent = this.Back;
+            this.Back.Size = new System.Drawing.Size(55, 45);
+            this.Back.TabIndex = 11;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // supprimer
+            // 
+            this.supprimer.Animated = true;
+            this.supprimer.AutoRoundedCorners = true;
+            this.supprimer.BorderRadius = 21;
+            this.supprimer.CheckedState.Parent = this.supprimer;
+            this.supprimer.CustomImages.Parent = this.supprimer;
+            this.supprimer.FillColor = System.Drawing.Color.Gray;
+            this.supprimer.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supprimer.ForeColor = System.Drawing.Color.White;
+            this.supprimer.HoverState.Parent = this.supprimer;
+            this.supprimer.Image = global::Gestion_de_congé.Properties.Resources.trash_b;
+            this.supprimer.ImageSize = new System.Drawing.Size(30, 30);
+            this.supprimer.Location = new System.Drawing.Point(275, 250);
+            this.supprimer.Name = "supprimer";
+            this.supprimer.ShadowDecoration.Parent = this.supprimer;
+            this.supprimer.Size = new System.Drawing.Size(180, 45);
+            this.supprimer.TabIndex = 10;
+            this.supprimer.Text = "Supprimer";
+            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
+            // 
             // suppr_emp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(725, 307);
             this.Controls.Add(this.par_id_check);
             this.Controls.Add(this.par_login_check);

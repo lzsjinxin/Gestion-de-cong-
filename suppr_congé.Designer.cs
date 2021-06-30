@@ -33,9 +33,7 @@ namespace Gestion_de_congé
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.supprimer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.Back = new Guna.UI2.WinForms.Guna2Button();
             this.deets_table = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,56 +48,18 @@ namespace Gestion_de_congé
             this.date_debut_text = new System.Windows.Forms.TextBox();
             this.login_text = new System.Windows.Forms.TextBox();
             this.type_text = new System.Windows.Forms.TextBox();
+            this.Back = new Guna.UI2.WinForms.Guna2Button();
+            this.supprimer = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.deets_table)).BeginInit();
             this.SuspendLayout();
-            // 
-            // supprimer
-            // 
-            this.supprimer.Animated = true;
-            this.supprimer.AutoRoundedCorners = true;
-            this.supprimer.BorderRadius = 21;
-            this.supprimer.CheckedState.Parent = this.supprimer;
-            this.supprimer.CustomImages.Parent = this.supprimer;
-            this.supprimer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.supprimer.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supprimer.ForeColor = System.Drawing.Color.White;
-            this.supprimer.HoverState.Parent = this.supprimer;
-            this.supprimer.Image = global::Gestion_de_congé.Properties.Resources.trash_b;
-            this.supprimer.ImageSize = new System.Drawing.Size(30, 30);
-            this.supprimer.Location = new System.Drawing.Point(446, 371);
-            this.supprimer.Name = "supprimer";
-            this.supprimer.ShadowDecoration.Parent = this.supprimer;
-            this.supprimer.Size = new System.Drawing.Size(180, 45);
-            this.supprimer.TabIndex = 4;
-            this.supprimer.Text = "Supprimer";
-            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
             // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
-            // Back
-            // 
-            this.Back.Animated = true;
-            this.Back.AutoRoundedCorners = true;
-            this.Back.BorderRadius = 21;
-            this.Back.CheckedState.Parent = this.Back;
-            this.Back.CustomImages.Parent = this.Back;
-            this.Back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
-            this.Back.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Back.ForeColor = System.Drawing.Color.White;
-            this.Back.HoverState.Parent = this.Back;
-            this.Back.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
-            this.Back.Location = new System.Drawing.Point(12, 12);
-            this.Back.Name = "Back";
-            this.Back.ShadowDecoration.Parent = this.Back;
-            this.Back.Size = new System.Drawing.Size(55, 45);
-            this.Back.TabIndex = 8;
-            this.Back.Click += new System.EventHandler(this.Back_Click);
-            // 
             // deets_table
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("EPSON ëæñæí©ëÃÇa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.deets_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.deets_table.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -108,10 +68,9 @@ namespace Gestion_de_congé
             this.deets_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.deets_table.BackgroundColor = System.Drawing.Color.White;
             this.deets_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.deets_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.deets_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.deets_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(105)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Benguiat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -131,7 +90,7 @@ namespace Gestion_de_congé
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.deets_table.DefaultCellStyle = dataGridViewCellStyle3;
@@ -147,26 +106,26 @@ namespace Gestion_de_congé
             this.deets_table.Size = new System.Drawing.Size(919, 319);
             this.deets_table.TabIndex = 9;
             this.deets_table.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Amethyst;
-            this.deets_table.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.deets_table.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Gray;
             this.deets_table.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("EPSON ëæñæí©ëÃÇa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.deets_table.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.deets_table.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.deets_table.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.deets_table.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.deets_table.ThemeStyle.GridColor = System.Drawing.Color.Black;
-            this.deets_table.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(105)))), ((int)(((byte)(255)))));
-            this.deets_table.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.deets_table.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DimGray;
+            this.deets_table.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.deets_table.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Benguiat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deets_table.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.deets_table.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.deets_table.ThemeStyle.HeaderStyle.Height = 48;
             this.deets_table.ThemeStyle.ReadOnly = true;
             this.deets_table.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.deets_table.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.deets_table.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.deets_table.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.deets_table.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.deets_table.ThemeStyle.RowsStyle.Height = 28;
-            this.deets_table.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.deets_table.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.deets_table.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.deets_table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.deets_table_CellClick);
             // 
@@ -267,10 +226,51 @@ namespace Gestion_de_congé
             this.type_text.TabIndex = 17;
             this.type_text.Visible = false;
             // 
+            // Back
+            // 
+            this.Back.Animated = true;
+            this.Back.AutoRoundedCorners = true;
+            this.Back.BorderRadius = 21;
+            this.Back.CheckedState.Parent = this.Back;
+            this.Back.CustomImages.Parent = this.Back;
+            this.Back.FillColor = System.Drawing.Color.Gray;
+            this.Back.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Back.ForeColor = System.Drawing.Color.White;
+            this.Back.HoverState.Parent = this.Back;
+            this.Back.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
+            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Name = "Back";
+            this.Back.ShadowDecoration.Parent = this.Back;
+            this.Back.Size = new System.Drawing.Size(55, 45);
+            this.Back.TabIndex = 8;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // supprimer
+            // 
+            this.supprimer.Animated = true;
+            this.supprimer.AutoRoundedCorners = true;
+            this.supprimer.BorderRadius = 21;
+            this.supprimer.CheckedState.Parent = this.supprimer;
+            this.supprimer.CustomImages.Parent = this.supprimer;
+            this.supprimer.FillColor = System.Drawing.Color.Gray;
+            this.supprimer.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supprimer.ForeColor = System.Drawing.Color.White;
+            this.supprimer.HoverState.Parent = this.supprimer;
+            this.supprimer.Image = global::Gestion_de_congé.Properties.Resources.trash_b;
+            this.supprimer.ImageSize = new System.Drawing.Size(30, 30);
+            this.supprimer.Location = new System.Drawing.Point(446, 371);
+            this.supprimer.Name = "supprimer";
+            this.supprimer.ShadowDecoration.Parent = this.supprimer;
+            this.supprimer.Size = new System.Drawing.Size(180, 45);
+            this.supprimer.TabIndex = 4;
+            this.supprimer.Text = "Supprimer";
+            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
+            // 
             // suppr_congé
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1034, 452);
             this.Controls.Add(this.nbr_jour_text);
             this.Controls.Add(this.date_retour_text);

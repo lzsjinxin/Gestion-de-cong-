@@ -13,14 +13,14 @@ namespace Gestion_de_congé
 {
     public partial class Admin : Form
     {
-        public static string conn = "Data Source=localhost;Initial Catalog=gestion_conge;Integrated Security=True";
+        public static string conn = ServerName.conn;
         public SqlConnection cone = new SqlConnection(conn);
         public SqlDataReader sdr;
         public Admin()
         {
             InitializeComponent();
         }
-
+        
 
         
         public void MajData()
@@ -354,6 +354,11 @@ namespace Gestion_de_congé
         {
             conge_demandé c2 = new conge_demandé();
             c2.Show();
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

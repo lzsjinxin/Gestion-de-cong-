@@ -39,10 +39,9 @@ namespace Gestion_de_congé
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.leaave = new Guna.UI2.WinForms.Guna2Button();
-            this.quitter = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.quitter = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -64,7 +63,7 @@ namespace Gestion_de_congé
             // 
             this.date_debut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.date_debut.CheckedState.Parent = this.date_debut;
-            this.date_debut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.date_debut.FillColor = System.Drawing.Color.Gray;
             this.date_debut.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.date_debut.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.date_debut.HoverState.Parent = this.date_debut;
@@ -85,11 +84,11 @@ namespace Gestion_de_congé
             this.Demander.BorderRadius = 31;
             this.Demander.CheckedState.Parent = this.Demander;
             this.Demander.CustomImages.Parent = this.Demander;
-            this.Demander.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.Demander.FillColor = System.Drawing.Color.Gray;
             this.Demander.Font = new System.Drawing.Font("Benguiat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Demander.ForeColor = System.Drawing.Color.White;
             this.Demander.HoverState.Parent = this.Demander;
-            this.Demander.Location = new System.Drawing.Point(322, 315);
+            this.Demander.Location = new System.Drawing.Point(317, 335);
             this.Demander.Name = "Demander";
             this.Demander.ShadowDecoration.Parent = this.Demander;
             this.Demander.Size = new System.Drawing.Size(200, 65);
@@ -129,7 +128,7 @@ namespace Gestion_de_congé
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Gray;
+            this.guna2Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
@@ -144,7 +143,7 @@ namespace Gestion_de_congé
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Gray;
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(664, 0);
@@ -156,7 +155,7 @@ namespace Gestion_de_congé
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(49)))), ((int)(((byte)(137)))));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Gray;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(715, 0);
@@ -167,9 +166,8 @@ namespace Gestion_de_congé
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.leaave);
             this.guna2Panel1.Controls.Add(this.quitter);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -178,18 +176,22 @@ namespace Gestion_de_congé
             this.guna2Panel1.Size = new System.Drawing.Size(194, 544);
             this.guna2Panel1.TabIndex = 5;
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            // 
             // guna2Button1
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Silver;
+            this.guna2Button1.BackColor = System.Drawing.Color.SlateGray;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Silver;
+            this.guna2Button1.FillColor = System.Drawing.Color.SteelBlue;
             this.guna2Button1.Font = new System.Drawing.Font("Benguiat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Gestion_de_congé.Properties.Resources.android_arrow_back;
             this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button1.Location = new System.Drawing.Point(3, 423);
+            this.guna2Button1.Location = new System.Drawing.Point(9, 21);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(182, 51);
@@ -197,30 +199,12 @@ namespace Gestion_de_congé
             this.guna2Button1.Text = "Retour";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // leaave
-            // 
-            this.leaave.CheckedState.Parent = this.leaave;
-            this.leaave.CustomImages.Parent = this.leaave;
-            this.leaave.FillColor = System.Drawing.Color.Silver;
-            this.leaave.Font = new System.Drawing.Font("Benguiat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leaave.ForeColor = System.Drawing.Color.Black;
-            this.leaave.HoverState.Parent = this.leaave;
-            this.leaave.Image = global::Gestion_de_congé.Properties.Resources.ios7_close_outline;
-            this.leaave.ImageSize = new System.Drawing.Size(50, 50);
-            this.leaave.Location = new System.Drawing.Point(3, 22);
-            this.leaave.Name = "leaave";
-            this.leaave.ShadowDecoration.Parent = this.leaave;
-            this.leaave.Size = new System.Drawing.Size(185, 51);
-            this.leaave.TabIndex = 0;
-            this.leaave.Text = "Quitter";
-            this.leaave.Click += new System.EventHandler(this.leaave_Click);
-            // 
             // quitter
             // 
             this.quitter.BackColor = System.Drawing.Color.Silver;
             this.quitter.CheckedState.Parent = this.quitter;
             this.quitter.CustomImages.Parent = this.quitter;
-            this.quitter.FillColor = System.Drawing.Color.Silver;
+            this.quitter.FillColor = System.Drawing.Color.SteelBlue;
             this.quitter.Font = new System.Drawing.Font("Benguiat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitter.ForeColor = System.Drawing.Color.Black;
             this.quitter.HoverState.Parent = this.quitter;
@@ -233,10 +217,6 @@ namespace Gestion_de_congé
             this.quitter.TabIndex = 1;
             this.quitter.Text = "Déconnecter";
             this.quitter.Click += new System.EventHandler(this.quitter_Click);
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
             // 
             // emp_maternité
             // 
@@ -269,7 +249,6 @@ namespace Gestion_de_congé
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button leaave;
         private Guna.UI2.WinForms.Guna2Button quitter;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;

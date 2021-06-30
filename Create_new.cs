@@ -13,7 +13,7 @@ namespace Gestion_de_congé
 {
     public partial class Create_new : Form
     {
-        public static string conn = "Data Source=localhost;Initial Catalog=gestion_conge;Integrated Security=True";
+        public static string conn = ServerName.conn;
         public SqlConnection cone = new SqlConnection(conn);
         public SqlDataReader sdr;
         public Create_new()
@@ -66,15 +66,14 @@ namespace Gestion_de_congé
 
                 }
             }
-            catch (SqlException Ex)
+            catch (Exception Ex)
             {
-                if(Ex.ErrorCode == -2146232060)
-                {
-                    MessageBox.Show("Ce login existe deja !!");
-                    return;
-                }
-                
-                MessageBox.Show(Ex.Message);
+                //if(Ex.ErrorCode == -2146232060)
+                //{
+                //    MessageBox.Show("Ce login existe deja !!");
+                //    return;
+                //}
+               MessageBox.Show(Ex.Message);
                 return;
             }
         }
